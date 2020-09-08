@@ -1,5 +1,8 @@
 # Jetbrains
 .idea/
+# statics
+*.img
+*.png
 # Logs
 logs
 *.log
