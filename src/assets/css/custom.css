@@ -85,6 +85,15 @@ body {
     justify-content: center;
     justify-self: right;
 }
+
+.right-menu .links a {
+    margin-right: 5px;
+}
+
+.right-menu .links a:last-child {
+    margin-right: 0;
+}
+
 /*Profile picture*/
 .profile {
     display: grid;
