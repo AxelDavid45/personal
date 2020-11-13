@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": ""
+    "dev": "npx live-server"
   },
   "repository": {
     "type": "git",
