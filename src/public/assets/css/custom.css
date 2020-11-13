@@ -81,6 +81,8 @@ body {
     color: white;
     display: grid;
     justify-content: center;
+    align-content: center;
+    grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -120,6 +122,10 @@ body {
     justify-content: space-between;
     flex-wrap: nowrap;
   }
+
+  .center-menu a {
+    margin-bottom: 0;
+  }
 }
 
 .right-menu {
@@ -148,6 +154,7 @@ body {
 
   .right-menu a {
     margin-right: 5px;
+    margin-bottom: 0;
   }
 
   .right-menu a:last-child {

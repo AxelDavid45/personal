@@ -3,22 +3,34 @@
   "version": "1.0.0",
   "description": "This repository contains the source code of my frontend personal website.",
   "main": "index.js",
-  "dependencies": {
-    "live-server": "^1.2.1"
-  },
-  "devDependencies": {},
+  "keywords": [],
+  "author": "axelespinosadev",
   "scripts": {
-    "dev": "npx live-server"
+    "start": "node src/server.js",
+    "start:dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "husky": "^4.3.0",
+    "live-server": "^1.2.1",
+    "nodemon": "^2.0.6"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AxelDavid45/personal.git"
   },
-  "keywords": [],
-  "author": "",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/AxelDavid45/personal/issues"
   },
-  "homepage": "https://github.com/AxelDavid45/personal#readme"
+  "homepage": "https://github.com/AxelDavid45/personal#readme",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
 }
